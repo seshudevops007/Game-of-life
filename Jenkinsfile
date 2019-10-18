@@ -59,8 +59,7 @@ pipeline {
 
                 {
 
-                    deploy adapters: [tomcat7(credentialsId: 'b971d196-c2b6-47f3-b060-1c7fdf2db6ec', path: '', url: 'http://localhost:8090/manager/html')], contextPath: null, war: '**/*.war'
-
+                    deploy adapters: [tomcat7(credentialsId: '7b122523-fe25-48eb-b7ed-746a0f36a14b', path: '', url: 'http://localhost:8090/manager/html')], contextPath: null, war: '**/*.war'
                 }
 
             }
