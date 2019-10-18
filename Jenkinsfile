@@ -60,6 +60,7 @@ pipeline {
                 {
 
                     deploy adapters: [tomcat7(credentialsId: '7b122523-fe25-48eb-b7ed-746a0f36a14b', path: '', url: 'http://localhost:8090/manager/html')], contextPath: null, war: '**/*.war'
+                    bat label: '', script: 'mvn compile'
                 }
 
             }
