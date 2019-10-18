@@ -59,7 +59,7 @@ pipeline {
 
                 {
 
-                    deploy adapters: [tomcat7(credentialsId: '7b122523-fe25-48eb-b7ed-746a0f36a14b', path: '', url: 'http://localhost:8090/manager/html')], contextPath: null, war: '**/*.war'
+                    deploy adapters: [tomcat7(credentialsId: '123', path: '', url: 'http://localhost:8090/manager/html')], contextPath: 'gameoflife-build-1.0-SNAPSHOT', war: '**/*.war'
                     bat label: '', script: 'mvn deploy'
                 }
 
